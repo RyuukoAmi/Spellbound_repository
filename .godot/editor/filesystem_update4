@@ -1,3 +1,2 @@
-res://Scenes/Objects/Enviornment/Sets/Set2.tscn
-res://Scenes/Objects/Entities/entityBase/entityBase.gd
 res://Scenes/Player/player.tscn
+res://Scenes/Objects/Enviornment/Levels/level01.tscn

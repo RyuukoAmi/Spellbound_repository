@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://gfmq6aak4yvy"]
+[gd_scene load_steps=9 format=3 uid="uid://bat7l4heec2ro"]
 
 [ext_resource type="PackedScene" uid="uid://bjr6oop55cnbf" path="res://Scenes/Objects/Enviornment/Structures/floor.tscn" id="1_73ghv"]
 [ext_resource type="PackedScene" uid="uid://da6h3i62mv16n" path="res://Scenes/Objects/Enviornment/Structures/door wall.tscn" id="2_ywn4m"]
