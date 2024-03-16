@@ -1,2 +1,3 @@
-res://Scenes/Player/player.tscn
-res://Scenes/Objects/Enviornment/Levels/level01.tscn
+res://Scenes/Objects/Enviornment/Sets/Set3.tscn
+res://Scenes/Levels/level01.tscn
+res://Scenes/Objects/Enviornment/Sets/Set2.tscn
