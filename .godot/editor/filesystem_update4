@@ -1,0 +1,22 @@
+res://Scenes/UI/user_interface.tscn
+res://Scenes/Player/player.tscn
+res://Scenes/Objects/Enviornment/Structures/exit_door.tscn
+res://Scenes/UI/Dialogue box/dialouge_box.tscn
+res://Scenes/Objects/Projectiles/bullet.tscn
+res://Scenes/Objects/Entities/mob_bat/mob_bat.tscn
+res://Scenes/Objects/Enviornment/Levels/level02.tscn
+res://Scenes/Objects/Enviornment/Structures/floor.tscn
+res://Scenes/Player/player.gd
+res://Scenes/Objects/Enviornment/Levels/level03.tscn
+res://Scenes/Objects/Enviornment/Sets/Set3.tscn
+res://Scenes/Objects/Enviornment/Sets/Set2.tscn
+res://Scenes/Objects/Enviornment/Dressings/bookbox.tscn
+res://Scenes/Objects/Enviornment/Dressings/borkentable.tscn
+res://Scenes/Objects/Enviornment/Dressings/curverug.tscn
+res://Scenes/Objects/Enviornment/Dressings/env_iso_block_3d.tscn
+res://Scenes/Objects/Enviornment/Dressings/env_iso_bookshelf.tscn
+res://Scenes/Objects/Enviornment/Dressings/torches.tscn
+res://Scenes/Objects/Entities/mob_bat/mob_bat.gd
+res://Scenes/Objects/Projectiles/bullet.gd
+res://Scenes/Objects/Entities/Mob_Slime/mob_slime.gd
+res://Scenes/Objects/Entities/Mob_Slime/mob_slime.tscn

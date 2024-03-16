@@ -1,0 +1,161 @@
+[gd_scene load_steps=23 format=3 uid="uid://c83rjnqxooq8w"]
+
+[ext_resource type="Script" path="res://Scenes/Objects/Entities/Mob_Slime/mob_slime.gd" id="1_ojd8i"]
+[ext_resource type="Texture2D" uid="uid://ccob4pbjc7f73" path="res://Sprites/Entities/Enemies/sSlime_strip4.png" id="1_sthgi"]
+[ext_resource type="Texture2D" uid="uid://dos00c113qwoi" path="res://Sprites/Entities/Enemies/sSlimeAttack_strip6.png" id="2_5bu53"]
+[ext_resource type="Texture2D" uid="uid://76waf6rmrvoi" path="res://Sprites/Entities/Enemies/sSlimeHurt.png" id="2_8e66r"]
+[ext_resource type="Texture2D" uid="uid://dliiwd4jrsx31" path="res://Sprites/Entities/Enemies/sSlimeDie_strip6.png" id="4_kdxum"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sj3xb"]
+atlas = ExtResource("2_5bu53")
+region = Rect2(0, 0, 14, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a1tgg"]
+atlas = ExtResource("2_5bu53")
+region = Rect2(14, 0, 14, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4cks1"]
+atlas = ExtResource("2_5bu53")
+region = Rect2(28, 0, 14, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wkoyf"]
+atlas = ExtResource("2_5bu53")
+region = Rect2(42, 0, 14, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vr00l"]
+atlas = ExtResource("2_5bu53")
+region = Rect2(56, 0, 14, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vysno"]
+atlas = ExtResource("2_5bu53")
+region = Rect2(70, 0, 14, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xrpeg"]
+atlas = ExtResource("4_kdxum")
+region = Rect2(16, 0, 16, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6f2em"]
+atlas = ExtResource("4_kdxum")
+region = Rect2(32, 0, 16, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vh0pu"]
+atlas = ExtResource("4_kdxum")
+region = Rect2(48, 0, 16, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxdpr"]
+atlas = ExtResource("4_kdxum")
+region = Rect2(64, 0, 16, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vp4jp"]
+atlas = ExtResource("4_kdxum")
+region = Rect2(80, 0, 16, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_32u48"]
+atlas = ExtResource("1_sthgi")
+region = Rect2(0, 0, 13, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rqhiq"]
+atlas = ExtResource("1_sthgi")
+region = Rect2(13, 0, 13, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xw7gn"]
+atlas = ExtResource("1_sthgi")
+region = Rect2(26, 0, 13, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tnhk6"]
+atlas = ExtResource("1_sthgi")
+region = Rect2(39, 0, 13, 11)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1x220"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sj3xb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a1tgg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4cks1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wkoyf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vr00l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vysno")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xrpeg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6f2em")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vh0pu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxdpr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vp4jp")
+}],
+"loop": true,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_8e66r")
+}],
+"loop": true,
+"name": &"hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_32u48")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rqhiq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xw7gn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tnhk6")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_o6vxu"]
+radius = 1.25
+
+[node name="Mob_Slime" type="CharacterBody3D" groups=["mobs"]]
+script = ExtResource("1_ojd8i")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, -0.517304, 0)
+centered = false
+offset = Vector2(-6, 0)
+pixel_size = 0.02
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_1x220")
+animation = &"death"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("SphereShape3D_o6vxu")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[connection signal="input_event" from="." to="." method="_on_Mousover_event"]

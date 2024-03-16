@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://pawju4lkojso"]
+
+[ext_resource type="Texture2D" uid="uid://dnb3ar15h7s1l" path="res://Imports/textures/Material_001_albedo2.png" id="1_3qnut"]
+
+[resource]
+resource_name = "Material_0013"
+cull_mode = 2
+albedo_color = Color(1, 1, 1, 1)
+albedo_texture = ExtResource("1_3qnut")
+roughness = 0.5

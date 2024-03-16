@@ -1,0 +1,208 @@
+[gd_scene load_steps=29 format=3 uid="uid://bc0iwsqktedtj"]
+
+[ext_resource type="Script" path="res://Scenes/Objects/Projectiles/bullet.gd" id="1_u3ek8"]
+[ext_resource type="Texture2D" uid="uid://d3b7ggruq30sh" path="res://placeholderPaints/melee_bullet.png" id="2_b72or"]
+[ext_resource type="Texture2D" uid="uid://bvo8icu840a2e" path="res://Sprites/Entities/Projectiles/pistol/pistol1/projectile2.png" id="3_kl5ko"]
+[ext_resource type="Texture2D" uid="uid://ctdkccxokcw40" path="res://Sprites/Entities/Projectiles/pistol/pistol1/projectile3.png" id="4_7d0uv"]
+[ext_resource type="Texture2D" uid="uid://d3io38jjlx80w" path="res://Sprites/Entities/Projectiles/pistol/pistol1/projectile4.png" id="5_w3w0v"]
+[ext_resource type="Texture2D" uid="uid://bf01kghhueosi" path="res://Sprites/Entities/Projectiles/pistol/pistol1/projectile.png" id="6_lywh7"]
+[ext_resource type="Texture2D" uid="uid://b07bsp8wg6bmb" path="res://Sprites/Entities/Projectiles/pistol/pistol2/pistol2_0.png" id="7_gfb0r"]
+[ext_resource type="Texture2D" uid="uid://q82lp3t0e8bc" path="res://Sprites/Entities/Projectiles/pistol/pistol2/pistol2_1.png" id="8_l3rov"]
+[ext_resource type="Texture2D" uid="uid://dndj475qc2a2e" path="res://Sprites/Entities/Projectiles/pistol/pistol2/pistol2_2.png" id="9_84gt1"]
+[ext_resource type="Texture2D" uid="uid://da5yi6eltsnb2" path="res://Sprites/Entities/Projectiles/pistol/pistol2/pistol2_3.png" id="10_kvxu7"]
+[ext_resource type="Texture2D" uid="uid://d4kqgwfkl8gj2" path="res://Sprites/Entities/Projectiles/pistol/pistol3/pistol3_0.png" id="11_hc7k8"]
+[ext_resource type="Texture2D" uid="uid://b046u6gwmf7ph" path="res://Sprites/Entities/Projectiles/pistol/pistol3/pistol3_1.png" id="12_facfc"]
+[ext_resource type="Texture2D" uid="uid://d2d1kydrklly" path="res://Sprites/Entities/Projectiles/pistol/pistol3/pistol3_2.png" id="13_5t6pj"]
+[ext_resource type="Texture2D" uid="uid://bxquu2spwpwc5" path="res://Sprites/Entities/Projectiles/pistol/pistol3/pistol3_3.png" id="14_cjrii"]
+[ext_resource type="Texture2D" uid="uid://bp5jk1yrlsloy" path="res://Sprites/Entities/Projectiles/pistol/pistol4/pistol4_0.png" id="15_88y60"]
+[ext_resource type="Texture2D" uid="uid://bqxbbrmvnm0xd" path="res://Sprites/Entities/Projectiles/pistol/pistol4/pistol4_1.png" id="16_3yhho"]
+[ext_resource type="Texture2D" uid="uid://dcuwbhsh1a154" path="res://Sprites/Entities/Projectiles/pistol/pistol4/pistol4_2.png" id="17_e2vto"]
+[ext_resource type="Texture2D" uid="uid://cf08tgs1q5mrt" path="res://Sprites/Entities/Projectiles/pistol/pistol4/pistol4_3.png" id="18_oh737"]
+[ext_resource type="Texture2D" uid="uid://badwgwmqvle6l" path="res://Sprites/Entities/Projectiles/pistol/pistol5/pistol5_0.png" id="19_krv85"]
+[ext_resource type="Texture2D" uid="uid://de2o5s08n5yp7" path="res://Sprites/Entities/Projectiles/pistol/pistol5/pistol5_1.png" id="20_a4gnv"]
+[ext_resource type="Texture2D" uid="uid://cvfblq782urs0" path="res://Sprites/Entities/Projectiles/pistol/pistol5/pistol5_2.png" id="21_h884y"]
+[ext_resource type="Texture2D" uid="uid://qnhmll5xuiy1" path="res://Sprites/Entities/Projectiles/pistol/pistol5/pistol5_3.png" id="22_ekx2k"]
+[ext_resource type="Texture2D" uid="uid://h4qup4js86jr" path="res://Sprites/Entities/Projectiles/pistol/pistol6/pistol6_0.png" id="23_56ppv"]
+[ext_resource type="Texture2D" uid="uid://faiit52lvmcr" path="res://Sprites/Entities/Projectiles/pistol/pistol6/pistol6_1.png" id="24_8ljik"]
+[ext_resource type="Texture2D" uid="uid://b5sn1l4rvqjf8" path="res://Sprites/Entities/Projectiles/pistol/pistol6/pistol6_2.png" id="25_d25eo"]
+[ext_resource type="Texture2D" uid="uid://curropx6l1jhp" path="res://Sprites/Entities/Projectiles/pistol/pistol6/pistol6_3.png" id="26_v13g5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lweml"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_b72or")
+}],
+"loop": true,
+"name": &"melee1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_b72or")
+}],
+"loop": true,
+"name": &"melee2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_b72or")
+}],
+"loop": true,
+"name": &"melee3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_b72or")
+}],
+"loop": true,
+"name": &"melee4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_b72or")
+}],
+"loop": true,
+"name": &"melee5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_b72or")
+}],
+"loop": true,
+"name": &"melee6",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_kl5ko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_7d0uv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_w3w0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_lywh7")
+}],
+"loop": true,
+"name": &"pistol1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_gfb0r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_l3rov")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_84gt1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_kvxu7")
+}],
+"loop": true,
+"name": &"pistol2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_hc7k8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_facfc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_5t6pj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_cjrii")
+}],
+"loop": true,
+"name": &"pistol3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_88y60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_3yhho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_e2vto")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_oh737")
+}],
+"loop": true,
+"name": &"pistol4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_krv85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_a4gnv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_h884y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ekx2k")
+}],
+"loop": true,
+"name": &"pistol5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_56ppv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_8ljik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_d25eo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_v13g5")
+}],
+"loop": true,
+"name": &"pistol6",
+"speed": 5.0
+}]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4o0nu"]
+
+[node name="Bullet" type="Area3D"]
+script = ExtResource("1_u3ek8")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+pixel_size = 0.05
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_lweml")
+animation = &"pistol6"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+shape = SubResource("SphereShape3D_4o0nu")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+light_color = Color(0.333333, 0.984314, 0.596078, 1)
+light_energy = 7.454
+light_specular = 0.4
+
+[connection signal="body_entered" from="." to="." method="collided"]

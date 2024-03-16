@@ -1,0 +1,3 @@
+res://DATA/game_manager.gd
+res://player_singleton.gd
+res://Scenes/Player/player.gd

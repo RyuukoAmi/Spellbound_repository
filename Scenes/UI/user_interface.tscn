@@ -1,0 +1,127 @@
+[gd_scene load_steps=7 format=3 uid="uid://dccy10ddswm32"]
+
+[ext_resource type="Script" path="res://Scenes/UI/user_interface.gd" id="1_f33xr"]
+[ext_resource type="Texture2D" uid="uid://t8dr7mguaxvx" path="res://placeholderPaints/300-300hp.svg" id="2_4u6xj"]
+[ext_resource type="Texture2D" uid="uid://d1as8trkjdidy" path="res://placeholderPaints/175-175mp.svg" id="3_0qsy6"]
+[ext_resource type="Texture2D" uid="uid://cmopru387fofy" path="res://placeholderPaints/100-100mp.svg" id="4_7xa77"]
+[ext_resource type="Texture2D" uid="uid://cum87unvj0r34" path="res://placeholderPaints/200-200mp.svg" id="5_n5ybv"]
+[ext_resource type="Texture2D" uid="uid://corwtfswrw076" path="res://placeholderPaints/115-115mp.svg" id="6_rvw77"]
+
+[node name="UserInterface" type="MarginContainer"]
+process_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_f33xr")
+
+[node name="StatusContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_top = 200
+theme_override_constants/margin_right = 500
+
+[node name="HealthBar" type="TextureProgressBar" parent="StatusContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+value = 100.0
+rounded = true
+allow_greater = true
+fill_mode = 5
+texture_progress = ExtResource("2_4u6xj")
+radial_initial_angle = 190.0
+radial_fill_degrees = 289.0
+
+[node name="Equip2" type="MarginContainer" parent="StatusContainer"]
+visible = false
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_constants/margin_left = 175
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="EquipSlot2" type="TextureProgressBar" parent="StatusContainer/Equip2"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+value = 100.0
+rounded = true
+fill_mode = 5
+texture_progress = ExtResource("3_0qsy6")
+
+[node name="EquipmentSlot2" type="TextureRect" parent="StatusContainer/Equip2/EquipSlot2"]
+layout_mode = 2
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 125.0
+offset_bottom = 125.0
+texture = ExtResource("4_7xa77")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Equip1" type="MarginContainer" parent="StatusContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="StatusContainer/Equip1"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="EquipSlot1" type="TextureProgressBar" parent="StatusContainer/Equip1/MarginContainer2"]
+layout_mode = 2
+value = 100.0
+fill_mode = 5
+texture_progress = ExtResource("5_n5ybv")
+radial_initial_angle = 180.0
+
+[node name="EquipmentSlot1" type="TextureRect" parent="StatusContainer/Equip1/MarginContainer2/EquipSlot1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -57.5
+offset_top = -57.5
+offset_right = 57.5
+offset_bottom = 57.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_rvw77")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="PauseMenu" type="MarginContainer" parent="."]
+process_mode = 2
+visible = false
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="PauseMenu"]
+layout_mode = 2
+color = Color(0.258824, 0.141176, 0.380392, 0.372549)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PauseMenu"]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseMenu/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="ResumeButton" type="Button" parent="PauseMenu/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Resume Game"
+
+[node name="OptionsButton" type="Button" parent="PauseMenu/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Options"
+
+[node name="QuitButton" type="Button" parent="PauseMenu/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit to Title"
+
+[connection signal="pressed" from="PauseMenu/HBoxContainer/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="PauseMenu/HBoxContainer/VBoxContainer/QuitButton" to="." method="quit_to_title"]

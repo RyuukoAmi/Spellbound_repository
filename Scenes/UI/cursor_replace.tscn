@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cincr73vw36bg"]
+
+[ext_resource type="Script" path="res://Scenes/UI/cursorReplace.gd" id="1_ecx8b"]
+
+[node name="cursorReplace" type="Node"]
+script = ExtResource("1_ecx8b")

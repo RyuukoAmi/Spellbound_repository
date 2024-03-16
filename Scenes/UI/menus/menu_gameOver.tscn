@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1wln6rmmxl0v"]
+
+[ext_resource type="Theme" uid="uid://rpcynb827u8m" path="res://Scenes/UI/SpellboundTheme.tres" id="1_m3kbw"]
+[ext_resource type="Script" path="res://Scenes/UI/menus/menu_gameOver.gd" id="2_flh0v"]
+
+[node name="Game_over" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_m3kbw")
+script = ExtResource("2_flh0v")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(0.258824, 0.141176, 0.380392, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="title" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 125
+text = "Game Over"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="menuContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Retry" type="Button" parent="VBoxContainer/HBoxContainer/menuContainer"]
+layout_mode = 2
+theme = ExtResource("1_m3kbw")
+text = "Retry?"
+
+[node name="Quit" type="Button" parent="VBoxContainer/HBoxContainer/menuContainer"]
+layout_mode = 2
+theme = ExtResource("1_m3kbw")
+text = "Quit"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/menuContainer"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Credits" type="Button" parent="VBoxContainer/HBoxContainer/menuContainer/HBoxContainer2"]
+layout_mode = 2
+text = "CREDITS"
+
+[node name="Options" type="Button" parent="VBoxContainer/HBoxContainer/menuContainer/HBoxContainer2"]
+layout_mode = 2
+text = "OPTIONS"
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/menuContainer/Retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/menuContainer/Quit" to="." method="_on_quit_pressed"]

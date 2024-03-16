@@ -1,0 +1,46 @@
+[gd_scene load_steps=9 format=3 uid="uid://c2lubhul4a6ip"]
+
+[ext_resource type="PackedScene" uid="uid://b1e5ea4gy04g6" path="res://Scenes/Player/player.tscn" id="1_h4qhp"]
+[ext_resource type="PackedScene" uid="uid://boxk4f8la0eos" path="res://Scenes/Player/PlayerCamera_3d.tscn" id="2_r7ayc"]
+[ext_resource type="PackedScene" uid="uid://c83rjnqxooq8w" path="res://Scenes/Objects/Entities/Mob_Slime/mob_slime.tscn" id="3_ocvnb"]
+[ext_resource type="PackedScene" uid="uid://edpk8phkipq6" path="res://Scenes/Objects/Enviornment/Structures/env_ground_circle.tscn" id="4_7w0sy"]
+[ext_resource type="PackedScene" uid="uid://itt05tbn5hgr" path="res://Scenes/Objects/Enviornment/Dressings/env_iso_bookshelf.tscn" id="5_klop8"]
+[ext_resource type="PackedScene" uid="uid://w6lfbjeat2va" path="res://Scenes/Objects/Enviornment/Dressings/env_iso_block_3d.tscn" id="6_5cfwk"]
+[ext_resource type="PackedScene" uid="uid://cincr73vw36bg" path="res://Scenes/UI/cursor_replace.tscn" id="7_krjr6"]
+[ext_resource type="PackedScene" uid="uid://dccy10ddswm32" path="res://Scenes/UI/user_interface.tscn" id="8_6ixja"]
+
+[node name="Level1" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource("1_h4qhp")]
+
+[node name="CameraPivot" type="Marker3D" parent="Player"]
+transform = Transform3D(-4.37114e-08, 0.5, -0.866025, 0, 0.866025, 0.5, 1, 2.18557e-08, -3.78552e-08, -50, 30, 0)
+
+[node name="Camera3D" parent="Player/CameraPivot" instance=ExtResource("2_r7ayc")]
+projection = 1
+current = true
+size = 25.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.5, 0.866026, 0, -0.866026, -0.5, 0, 5, 0)
+light_color = Color(0.0823529, 0.117647, 1, 1)
+light_energy = 0.25
+shadow_enabled = true
+
+[node name="Mob_Slime" parent="." instance=ExtResource("3_ocvnb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 25)
+
+[node name="Env_Ground_circle" parent="." instance=ExtResource("4_7w0sy")]
+
+[node name="Env_Iso_Block" parent="Env_Ground_circle" instance=ExtResource("5_klop8")]
+transform = Transform3D(0.906581, 0, -0.422033, 0, 1, 0, 0.422033, 0, 0.906581, 6.11625, 5, -22.4298)
+
+[node name="Env_Iso_Block2" parent="Env_Ground_circle" instance=ExtResource("5_klop8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.1016, 5.01543, 9.81)
+
+[node name="Env_Iso_Block3" parent="Env_Ground_circle" instance=ExtResource("6_5cfwk")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -13.217, 2.25, -7.95699)
+
+[node name="cursorReplace" parent="." instance=ExtResource("7_krjr6")]
+
+[node name="UserInterface" parent="." instance=ExtResource("8_6ixja")]

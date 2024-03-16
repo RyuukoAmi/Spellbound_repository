@@ -1,0 +1,44 @@
+{
+  "max_health": {
+	"VALUE": 100
+  },
+  "current_health": {
+	"VALUE": 75
+  },
+  "health_regen": {
+	"VALUE": 0
+  },
+  "max_mana": {
+	"VALUE": 100
+  },
+  "current_mana": {
+	"VALUE": 100
+  },
+  "mana_regen": {
+	"VALUE": 7
+  },
+  "drop_rate": {
+	"VALUE": 0.5
+  },
+  "equiped_1": {
+	"VALUE": "pistol"
+  },
+  "melee_level": {
+	"VALUE": 0
+  },
+  "pistol_level": {
+	"VALUE": 1
+  },
+  "dash_level": {
+	"VALUE": 1
+  },
+  "health_level": {
+	"VALUE": 0
+  },
+  "mana_level": {
+	"VALUE": 0
+  },
+  "armor_level": {
+	"VALUE": 0
+  }
+}

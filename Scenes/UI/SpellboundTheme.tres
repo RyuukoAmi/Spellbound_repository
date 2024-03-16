@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://rpcynb827u8m"]
+
+[ext_resource type="FontFile" uid="uid://bdaw0fthn3gy2" path="res://Scenes/UI/Lemonada-VariableFont_wght.ttf" id="1_v1emv"]
+
+[resource]
+default_font = ExtResource("1_v1emv")
+HBoxContainer/constants/separation = 10

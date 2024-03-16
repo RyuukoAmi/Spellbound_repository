@@ -1,0 +1,601 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://c56v0mev17n1b"
+path="res://.godot/imported/Room1.gltf-b89a7cea19880734c89c0f4176b0b1ff.scn"
+
+[deps]
+
+source_file="res://Imports/Room1.gltf"
+dest_files=["res://.godot/imported/Room1.gltf-b89a7cea19880734c89c0f4176b0b1ff.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name="Set03"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={
+"materials": {
+"Material": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material.tres"
+},
+"Material_001": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_001.tres"
+},
+"Material_0012": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0012.tres"
+},
+"Material_0013": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0013.tres"
+},
+"Material_0014": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0014.tres"
+},
+"Material_0015": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0015.tres"
+},
+"Material_0016": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0016.tres"
+},
+"Material_0017": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0017.tres"
+},
+"Material_0018": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0018.tres"
+},
+"Material_0019": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0019.tres"
+},
+"Material_002": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_002.tres"
+},
+"Material_0022": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0022.tres"
+},
+"Material_0023": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0023.tres"
+},
+"Material_0024": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0024.tres"
+},
+"Material_003": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_003.tres"
+},
+"Material_00310": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_00310.tres"
+},
+"Material_00311": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_00311.tres"
+},
+"Material_0032": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0032.tres"
+},
+"Material_0033": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0033.tres"
+},
+"Material_0034": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0034.tres"
+},
+"Material_0035": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0035.tres"
+},
+"Material_0036": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0036.tres"
+},
+"Material_0037": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0037.tres"
+},
+"Material_0038": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0038.tres"
+},
+"Material_0039": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0039.tres"
+},
+"Material_004": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_004.tres"
+},
+"Material_0042": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0042.tres"
+},
+"Material_0043": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0043.tres"
+},
+"Material_0044": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0044.tres"
+},
+"Material_005": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_005.tres"
+},
+"Material_0052": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0052.tres"
+},
+"Material_0053": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0053.tres"
+},
+"Material_0054": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0054.tres"
+},
+"Material_006": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_006.tres"
+},
+"Material_0062": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0062.tres"
+},
+"Material_0063": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0063.tres"
+},
+"Material_007": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_007.tres"
+},
+"Material_0072": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0072.tres"
+},
+"Material_0073": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0073.tres"
+},
+"Material_0074": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0074.tres"
+},
+"Material_008": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_008.tres"
+},
+"Material_0082": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0082.tres"
+},
+"Material_0083": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0083.tres"
+},
+"Material_0084": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0084.tres"
+},
+"Material_0085": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0085.tres"
+},
+"Material_0086": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0086.tres"
+},
+"Material_0087": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0087.tres"
+},
+"Material_0088": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0088.tres"
+},
+"Material_0089": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0089.tres"
+},
+"Material_009": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_009.tres"
+},
+"Material_0092": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0092.tres"
+},
+"Material_0093": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0093.tres"
+},
+"Material_0094": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0094.tres"
+},
+"Material_010": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_010.tres"
+},
+"Material_0102": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0102.tres"
+},
+"Material_0103": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0103.tres"
+},
+"Material_0104": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0104.tres"
+},
+"Material_0105": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0105.tres"
+},
+"Material_0106": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0106.tres"
+},
+"Material_011": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_011.tres"
+},
+"Material_01110": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_01110.tres"
+},
+"Material_0112": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0112.tres"
+},
+"Material_0113": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0113.tres"
+},
+"Material_0114": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0114.tres"
+},
+"Material_0115": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0115.tres"
+},
+"Material_0116": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0116.tres"
+},
+"Material_0117": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0117.tres"
+},
+"Material_0118": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0118.tres"
+},
+"Material_0119": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0119.tres"
+},
+"Material_012": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_012.tres"
+},
+"Material_0122": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0122.tres"
+},
+"Material_0123": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0123.tres"
+},
+"Material_0124": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0124.tres"
+},
+"Material_0125": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0125.tres"
+},
+"Material_0126": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0126.tres"
+},
+"Material_0127": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0127.tres"
+},
+"Material_0128": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0128.tres"
+},
+"Material_0129": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0129.tres"
+},
+"Material_013": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_013.tres"
+},
+"Material_0132": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0132.tres"
+},
+"Material_0133": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0133.tres"
+},
+"Material_0134": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0134.tres"
+},
+"Material_0135": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0135.tres"
+},
+"Material_0136": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0136.tres"
+},
+"Material_0137": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0137.tres"
+},
+"Material_0138": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0138.tres"
+},
+"Material_0139": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0139.tres"
+},
+"Material_014": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_014.tres"
+},
+"Material_0142": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0142.tres"
+},
+"Material_0143": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0143.tres"
+},
+"Material_0144": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0144.tres"
+},
+"Material_0145": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0145.tres"
+},
+"Material_0146": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0146.tres"
+},
+"Material_0147": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0147.tres"
+},
+"Material_0148": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0148.tres"
+},
+"Material_0149": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0149.tres"
+},
+"Material_015": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_015.tres"
+},
+"Material_0152": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0152.tres"
+},
+"Material_0153": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0153.tres"
+},
+"Material_0154": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0154.tres"
+},
+"Material_0155": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0155.tres"
+},
+"Material_016": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_016.tres"
+},
+"Material_0162": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0162.tres"
+},
+"Material_0163": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0163.tres"
+},
+"Material_0164": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0164.tres"
+},
+"Material_0165": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0165.tres"
+},
+"Material_017": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_017.tres"
+},
+"Material_0172": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0172.tres"
+},
+"Material_0173": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0173.tres"
+},
+"Material_0174": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0174.tres"
+},
+"Material_018": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_018.tres"
+},
+"Material_0182": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0182.tres"
+},
+"Material_0183": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0183.tres"
+},
+"Material_0184": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0184.tres"
+},
+"Material_019": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_019.tres"
+},
+"Material_0192": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0192.tres"
+},
+"Material_0193": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0193.tres"
+},
+"Material_0194": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0194.tres"
+},
+"Material_020": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_020.tres"
+},
+"Material_0202": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0202.tres"
+},
+"Material_0203": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0203.tres"
+},
+"Material_0204": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0204.tres"
+},
+"Material_0205": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0205.tres"
+},
+"Material_021": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_021.tres"
+},
+"Material_0212": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0212.tres"
+},
+"Material_0213": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0213.tres"
+},
+"Material_0214": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0214.tres"
+},
+"Material_0215": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0215.tres"
+},
+"Material_022": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_022.tres"
+},
+"Material_0222": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0222.tres"
+},
+"Material_0223": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0223.tres"
+},
+"Material_0224": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0224.tres"
+},
+"Material_0225": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0225.tres"
+},
+"Material_023": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_023.tres"
+},
+"Material_0232": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0232.tres"
+},
+"Material_0233": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0233.tres"
+},
+"Material_0234": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0234.tres"
+},
+"Material_0235": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/Material_0235.tres"
+},
+"material_0": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/material_0.tres"
+},
+"material_02": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/material_02.tres"
+},
+"material_03": {
+"use_external/enabled": true,
+"use_external/path": "res://Imports/materials/material_03.tres"
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=1

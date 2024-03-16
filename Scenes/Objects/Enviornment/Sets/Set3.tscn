@@ -1,0 +1,114 @@
+[gd_scene load_steps=9 format=3 uid="uid://gnediev6xkrl"]
+
+[ext_resource type="PackedScene" uid="uid://bjr6oop55cnbf" path="res://Scenes/Objects/Enviornment/Structures/floor.tscn" id="1_0xyvg"]
+[ext_resource type="PackedScene" uid="uid://da6h3i62mv16n" path="res://Scenes/Objects/Enviornment/Structures/door wall.tscn" id="2_67wj2"]
+[ext_resource type="PackedScene" uid="uid://ipq3ik68gjuh" path="res://Scenes/Objects/Enviornment/Structures/inner_curved_wall.tscn" id="3_q70ne"]
+[ext_resource type="PackedScene" uid="uid://cxchv3pef33v7" path="res://Scenes/Objects/Enviornment/Structures/door.tscn" id="4_xyc4b"]
+[ext_resource type="PackedScene" uid="uid://tif2qddduol" path="res://Scenes/Objects/Enviornment/Dressings/curverug.tscn" id="5_x6qfu"]
+[ext_resource type="PackedScene" uid="uid://rnf3hdkrvcit" path="res://Scenes/Objects/Enviornment/Dressings/borkentable.tscn" id="6_ah62w"]
+[ext_resource type="PackedScene" uid="uid://c27ou5w2ch25e" path="res://Scenes/Objects/Enviornment/Dressings/bookbox.tscn" id="7_dkh1w"]
+[ext_resource type="PackedScene" uid="uid://vtujaq1sfd7s" path="res://Scenes/Objects/Enviornment/Dressings/torches.tscn" id="8_lrtr6"]
+
+[node name="Level02" type="Node3D"]
+
+[node name="floor2" parent="." instance=ExtResource("1_0xyvg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.605695, 1)
+
+[node name="door wall" parent="floor2" instance=ExtResource("2_67wj2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.6446, 0.5, 17.6585)
+
+[node name="door wall2" parent="floor2" instance=ExtResource("2_67wj2")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 17.6992, 0.5, -24.6495)
+
+[node name="inner curved wall" parent="floor2" instance=ExtResource("3_q70ne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.40294, 0.5, -7.2194)
+
+[node name="door2" parent="floor2" instance=ExtResource("4_xyc4b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.5919, 0.5, 17.9136)
+
+[node name="door3" parent="floor2" instance=ExtResource("4_xyc4b")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.0245, 0.5, -24.7591)
+
+[node name="door4" parent="floor2" instance=ExtResource("4_xyc4b")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -6.1408, 0.5, -6.00025)
+
+[node name="curverug" parent="floor2" instance=ExtResource("5_x6qfu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.72489, 0.526286, 0.89186)
+
+[node name="borkentable" parent="floor2" instance=ExtResource("6_ah62w")]
+transform = Transform3D(0.67748, 0.5225, -0.517701, -0.717599, 0.315004, -0.621148, -0.161472, 0.792317, 0.588354, -4.43314, 2.74266, -5.38777)
+
+[node name="bookbox" parent="floor2" instance=ExtResource("7_dkh1w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.7414, 3.95682, 7.40376)
+
+[node name="bookbox2" parent="floor2" instance=ExtResource("7_dkh1w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.7414, 3.95682, 28.1564)
+
+[node name="bookbox3" parent="floor2" instance=ExtResource("7_dkh1w")]
+transform = Transform3D(0.707107, -0.707107, 0, 0.707107, 0.707107, 0, 0, 0, 1, -13.1389, 3.95682, 7.70645)
+
+[node name="bookbox4" parent="floor2" instance=ExtResource("7_dkh1w")]
+transform = Transform3D(0.75131, -0.584879, 0.305695, 0.614285, 0.789084, 0, -0.241219, 0.187784, 0.952129, -17.5987, 3.95682, 8.16182)
+
+[node name="bookbox5" parent="floor2" instance=ExtResource("7_dkh1w")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.11586, 3.95682, -22.75)
+
+[node name="bookbox6" parent="floor2" instance=ExtResource("7_dkh1w")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 28.1253, 3.95682, -22.75)
+
+[node name="bookbox7" parent="floor2" instance=ExtResource("7_dkh1w")]
+transform = Transform3D(0.450539, -0.780356, 0.433659, 0.866026, 0.5, 0, -0.21683, 0.37556, 0.901077, -8.18289, 3.27874, 5.539)
+
+[node name="bookbox8" parent="floor2" instance=ExtResource("7_dkh1w")]
+transform = Transform3D(0.340708, 0, 0.940169, 0, 1, 0, -0.940169, 0, 0.340708, 5.41697, 3.95682, -14.3008)
+
+[node name="bookbox9" parent="floor2" instance=ExtResource("7_dkh1w")]
+transform = Transform3D(-3.66178e-08, -0.837719, 0.546102, 1, -4.37114e-08, 0, 2.38709e-08, 0.546102, 0.837719, 3.27353, 1.7418, 19.8824)
+
+[node name="bookbox10" parent="floor2" instance=ExtResource("7_dkh1w")]
+transform = Transform3D(0.218951, -0.915809, -0.336682, 0.937605, 0.101954, 0.332419, -0.270106, -0.388458, 0.88099, -11.7264, 3.29685, 25.3642)
+
+[node name="bookbox11" parent="floor2" instance=ExtResource("7_dkh1w")]
+transform = Transform3D(0.507378, -0.861357, 0.0251301, 0.861629, 0.507538, 2.75286e-09, -0.0127545, 0.0216528, 0.999684, -18.2243, 3.18191, 27.8502)
+
+[node name="bookbox12" parent="floor2" instance=ExtResource("7_dkh1w")]
+transform = Transform3D(0.225087, 0, 0.974339, 0, 1, 0, -0.974339, 0, 0.225087, 27.1466, 3.95682, -13.5706)
+
+[node name="bookbox13" parent="floor2" instance=ExtResource("7_dkh1w")]
+transform = Transform3D(0.0844122, 0.218759, 0.972121, -0.932954, 0.359997, 6.3488e-09, -0.34996, -0.906944, 0.23448, 25.4659, 2.70289, -9.12104)
+
+[node name="bookbox14" parent="floor2" instance=ExtResource("7_dkh1w")]
+transform = Transform3D(0.103147, 0.382569, 0.918151, -0.938041, 0.34442, -0.0381288, -0.330816, -0.857331, 0.394391, 23.763, 2.70289, -3.79801)
+
+[node name="torches" parent="floor2" instance=ExtResource("8_lrtr6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.7948, 3.89209, 14.9776)
+
+[node name="torches2" parent="floor2" instance=ExtResource("8_lrtr6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.7948, 3.89209, 20.769)
+
+[node name="torches3" parent="floor2" instance=ExtResource("8_lrtr6")]
+transform = Transform3D(0.195501, 0, -0.980703, 0, 1, 0, 0.980703, 0, 0.195501, -19.6636, 3.89209, 2.39115)
+
+[node name="torches4" parent="floor2" instance=ExtResource("8_lrtr6")]
+transform = Transform3D(0.441616, 0, -0.897204, 0, 1, 0, 0.897204, 0, 0.441616, -12.9744, 3.89209, 0.22858)
+
+[node name="torches5" parent="floor2" instance=ExtResource("8_lrtr6")]
+transform = Transform3D(0.631651, 0, -0.775253, 0, 1, 0, 0.775253, 0, 0.631651, -7.4805, 3.89209, -3.18477)
+
+[node name="torches6" parent="floor2" instance=ExtResource("8_lrtr6")]
+transform = Transform3D(0.887751, 0, -0.460324, 0, 1, 0, 0.460324, 0, 0.887751, 0.00500679, 3.89209, -12.5298)
+
+[node name="torches7" parent="floor2" instance=ExtResource("8_lrtr6")]
+transform = Transform3D(0.981464, 0, -0.191648, 0, 1, 0, 0.191648, 0, 0.981464, 2.28406, 3.89209, -19.2755)
+
+[node name="torches8" parent="floor2" instance=ExtResource("8_lrtr6")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14.9498, 3.89209, -23.7964)
+
+[node name="torches9" parent="floor2" instance=ExtResource("8_lrtr6")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 20.7403, 3.89209, -23.7964)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.202189, 0.848139, 0.489673, 0, -0.5, 0.866026, 0.979347, 0.175101, 0.101095, -20.5022, 5, -19.0126)
+visible = false
+light_color = Color(0.223529, 0, 0.996078, 1)
+shadow_enabled = true

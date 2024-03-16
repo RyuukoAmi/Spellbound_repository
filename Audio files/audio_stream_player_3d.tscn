@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://npdttcy5vj6i"]
+
+[ext_resource type="AudioStream" uid="uid://c4uhrosjsf03a" path="res://Audio files/Spellbound_3.wav" id="1_1v3qr"]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D"]
+stream = ExtResource("1_1v3qr")
+volume_db = 12.631
+autoplay = true

@@ -1,0 +1,81 @@
+[gd_scene load_steps=13 format=3 uid="uid://cxlvqqq7lpe60"]
+
+[ext_resource type="Script" path="res://Scenes/Objects/Entities/pickups/page_drop.gd" id="1_cf8xf"]
+[ext_resource type="Texture2D" uid="uid://epp5jlw3ryer" path="res://Sprites/Enviornment/Items/Pot/sFrag_pot_strip4.png" id="2_dpidr"]
+[ext_resource type="Texture2D" uid="uid://fh7ffpvd3dky" path="res://Sprites/Enviornment/Items/page/floating pages.png" id="3_fmjv6"]
+[ext_resource type="Texture2D" uid="uid://c6dq87c1wm3n3" path="res://Sprites/Enviornment/Items/page/floating pages2.png" id="4_8f5pg"]
+[ext_resource type="Texture2D" uid="uid://dc4l32g4mg1kn" path="res://Sprites/Enviornment/Items/page/floating pages3.png" id="5_26vfj"]
+[ext_resource type="Texture2D" uid="uid://cr3m45lrn2ahf" path="res://Sprites/Enviornment/Items/page/floating pages4.png" id="6_lihdc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ndnsh"]
+atlas = ExtResource("2_dpidr")
+region = Rect2(0, 0, 6, 6)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_knh5j"]
+atlas = ExtResource("2_dpidr")
+region = Rect2(6, 0, 6, 6)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0sonm"]
+atlas = ExtResource("2_dpidr")
+region = Rect2(12, 0, 6, 6)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xp64u"]
+atlas = ExtResource("2_dpidr")
+region = Rect2(18, 0, 6, 6)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m86l5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ndnsh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_knh5j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0sonm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xp64u")
+}],
+"loop": true,
+"name": &"break",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_fmjv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8f5pg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_26vfj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_lihdc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_efh6o"]
+height = 1.0
+
+[node name="page_drop" type="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+script = ExtResource("1_cf8xf")
+
+[node name="animatedSprite3D" type="AnimatedSprite3D" parent="."]
+pixel_size = 0.1
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_m86l5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_efh6o")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+light_color = Color(1, 0, 0.25098, 1)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

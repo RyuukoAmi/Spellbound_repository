@@ -1,0 +1,69 @@
+[gd_scene load_steps=10 format=3 uid="uid://l44v7pty05hn"]
+
+[ext_resource type="Script" path="res://Scenes/Objects/Entities/pickups/health_pot.gd" id="1_aoh6r"]
+[ext_resource type="Texture2D" uid="uid://epp5jlw3ryer" path="res://Sprites/Enviornment/Items/Pot/sFrag_pot_strip4.png" id="2_awaju"]
+[ext_resource type="Texture2D" uid="uid://dw5vpn3m2y875" path="res://Sprites/Enviornment/Items/Pot/sPot.png" id="2_tuq2r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ndnsh"]
+atlas = ExtResource("2_awaju")
+region = Rect2(0, 0, 6, 6)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_knh5j"]
+atlas = ExtResource("2_awaju")
+region = Rect2(6, 0, 6, 6)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0sonm"]
+atlas = ExtResource("2_awaju")
+region = Rect2(12, 0, 6, 6)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xp64u"]
+atlas = ExtResource("2_awaju")
+region = Rect2(18, 0, 6, 6)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m86l5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ndnsh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_knh5j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0sonm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xp64u")
+}],
+"loop": true,
+"name": &"break",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_tuq2r")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_efh6o"]
+height = 1.0
+
+[node name="HealthPot" type="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+script = ExtResource("1_aoh6r")
+
+[node name="Sprite3D" type="AnimatedSprite3D" parent="."]
+pixel_size = 0.1
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_m86l5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_efh6o")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+light_color = Color(1, 0, 0.25098, 1)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

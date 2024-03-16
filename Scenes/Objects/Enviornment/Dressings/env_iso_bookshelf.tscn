@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://itt05tbn5hgr"]
+
+[ext_resource type="Script" path="res://Scenes/Objects/Enviornment/environment_aiming.gd" id="1_ucdqd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ks2s1"]
+size = Vector3(6, 8, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wj0cq"]
+albedo_color = Color(0.282353, 0.203922, 0.0862745, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sai0h"]
+material = SubResource("StandardMaterial3D_wj0cq")
+size = Vector3(6, 8, 2)
+
+[node name="Env_Iso_Block" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00347251, 0, 0)
+shape = SubResource("BoxShape3D_ks2s1")
+script = ExtResource("1_ucdqd")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_sai0h")
+
+[connection signal="input_event" from="." to="CollisionShape3D" method="_on_env_ground_circle_input_event"]
