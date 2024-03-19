@@ -1,5 +1,10 @@
 extends Node
 
+# INFO
+#GAME MANAGER
+
+
+
 var ability_data
 var default_save_data
 var custom_save_data
@@ -180,6 +185,9 @@ func save_game(): #INFO working as intended
 		},
 		"armor_level": {
 		"VALUE": playerGlobals.armor_level
+		},
+		"current_level": {
+		"VALUE": playerGlobals.current_level
 		}
 		}
 

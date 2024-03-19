@@ -1,3 +1,14 @@
-res://Scenes/Objects/Enviornment/Sets/Set3.tscn
+res://Scenes/Levels/main.tscn
+res://Scenes/UI/SpellboundTheme.tres
+res://DATA/game_manager.gd
+res://Scenes/Levels/level_01.gd
+res://player_singleton.gd
+res://Scenes/Levels/level_02.tscn
+res://Scenes/Levels/level_02.gd
 res://Scenes/Levels/level01.tscn
 res://Scenes/Objects/Enviornment/Sets/Set2.tscn
+res://Scenes/Objects/Enviornment/Sets/Set3.tscn
+res://Scenes/Levels/level_01.tscn
+res://Scenes/Levels/tESTlEVEL.tscn
+res://Scenes/UI/menus/menu_title.gd
+res://Scenes/Objects/Enviornment/Sets/Set1.tscn

@@ -19,11 +19,11 @@ func _on_credits_pressed():
 func _on_start_pressed():
 	#print("main menu credits button pressed")
 	GameManager.start_new_game()
-	get_tree().change_scene_to_file("res://Scenes/Objects/Enviornment/Levels/level02.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Levels/level_01.tscn")
 
 
 func _on_load_pressed():
-	print("main menu load button pressed")
+	#print("main menu load button pressed")
 	GameManager.import_custom_save()
 	GameManager.load_game()
-	get_tree().change_scene_to_file("res://Scenes/Objects/Enviornment/Levels/level02.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Levels/" + playerGlobals.current_level + ".tscn")

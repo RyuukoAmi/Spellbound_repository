@@ -4,6 +4,7 @@ var cursor_pointing = Vector3(1,1,0)
 var player_location
 var base_speed = 10
 var equiped_level 
+var current_level = "level_01"
 #player save values:
 var max_health
 var current_health
