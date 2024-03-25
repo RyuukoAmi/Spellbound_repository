@@ -5,6 +5,9 @@
   "current_health": {
 	"VALUE": 100
   },
+  "current_level": {
+	"VALUE": "level_01"
+  },
   "health_regen": {
 	"VALUE": 0
   },
@@ -21,13 +24,13 @@
 	"VALUE": 0.5
   },
   "equiped_1": {
-	"VALUE": "pistol"
+	"VALUE": null
   },
   "melee_level": {
 	"VALUE": 0
   },
   "pistol_level": {
-	"VALUE": 1
+	"VALUE": 0
   },
   "dash_level": {
 	"VALUE": 0

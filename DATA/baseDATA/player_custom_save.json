@@ -5,6 +5,9 @@
   "current_health": {
 	"VALUE": 75
   },
+  "current_level": {
+	"VALUE": "tESTlEVEL"
+  },
   "health_regen": {
 	"VALUE": 0
   },

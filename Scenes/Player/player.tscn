@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://b1e5ea4gy04g6"]
+[gd_scene load_steps=59 format=3 uid="uid://b1e5ea4gy04g6"]
 
 [ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_0264p"]
 [ext_resource type="Texture2D" uid="uid://bwcx0tk1ef2c6" path="res://Sprites/Player/Run_E/run_E (1).png" id="2_n56em"]
@@ -53,6 +53,7 @@
 [ext_resource type="Texture2D" uid="uid://cfw2u7ml06y1h" path="res://Sprites/Player/spell_w/west0.png" id="49_pbacv"]
 [ext_resource type="Texture2D" uid="uid://c6epjp6eknmib" path="res://Sprites/Player/spell_w/west4.png" id="50_8s782"]
 [ext_resource type="Texture2D" uid="uid://x2imortomjs6" path="res://Sprites/Player/spell_w/west3.png" id="52_ys0v4"]
+[ext_resource type="PackedScene" uid="uid://boxk4f8la0eos" path="res://Scenes/Player/PlayerCamera_3d.tscn" id="54_nbid2"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_hq43o"]
 height = 2.5
@@ -390,5 +391,13 @@ skeleton = NodePath("../..")
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25, 0)
 shape = SubResource("CylinderShape3D_hq43o")
+
+[node name="CameraPivot" type="Marker3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0.5, -0.866025, 0, 0.866025, 0.5, 1, 2.18557e-08, -3.78552e-08, -50, 30, 0)
+
+[node name="Camera3D" parent="CameraPivot" instance=ExtResource("54_nbid2")]
+projection = 1
+current = true
+size = 25.0
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

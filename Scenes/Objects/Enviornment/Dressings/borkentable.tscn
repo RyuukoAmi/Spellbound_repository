@@ -83,13 +83,11 @@ size = Vector3(10, 3, 5)
 
 [node name="table left" type="MeshInstance3D" parent="."]
 transform = Transform3D(3.75731, 0.0226177, 1.60879, -1.90458, 0.0845727, 0.167662, -2.93525, -0.0259242, 1.95056, -0.129171, 0.495567, 0.165607)
-visible = false
 mesh = SubResource("ArrayMesh_oukow")
 skeleton = NodePath("")
 
 [node name="table right" type="MeshInstance3D" parent="."]
 transform = Transform3D(3.55332, -0.024195, 1.70135, 1.97705, 0.0842085, -0.0833791, -3.13461, 0.0256849, 1.87602, -0.129171, 0.495567, 0.165607)
-visible = false
 mesh = SubResource("ArrayMesh_xk71q")
 skeleton = NodePath("")
 

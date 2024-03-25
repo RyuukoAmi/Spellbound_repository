@@ -1,0 +1,67 @@
+[gd_scene load_steps=11 format=3 uid="uid://j6kqv4jxacro"]
+
+[ext_resource type="Script" path="res://Scenes/Objects/Entities/mob_bat/mob_bat.gd" id="1_hrlr7"]
+[ext_resource type="Texture2D" uid="uid://cjyumgr5v2hfs" path="res://Sprites/Entities/Enemies/bat/bat3.png" id="2_hjrh2"]
+[ext_resource type="Texture2D" uid="uid://cn1vqqax0bd64" path="res://Sprites/Entities/Enemies/bat/bat0.png" id="3_3rkfj"]
+[ext_resource type="Texture2D" uid="uid://d3xxd5qekw17a" path="res://Sprites/Entities/Enemies/bat/bat1.png" id="4_t037e"]
+[ext_resource type="Texture2D" uid="uid://1rm0nfi4mllm" path="res://Sprites/Entities/Enemies/bat/bat_death3.png" id="5_x8t1h"]
+[ext_resource type="Texture2D" uid="uid://sdqfrhchdcpq" path="res://Sprites/Entities/Enemies/bat/bat_death0.png" id="6_ouxqu"]
+[ext_resource type="Texture2D" uid="uid://dn0ntvwwl1wy0" path="res://Sprites/Entities/Enemies/bat/bat_death2.png" id="7_6jey4"]
+[ext_resource type="Texture2D" uid="uid://16bm8e5606u5" path="res://Sprites/Entities/Enemies/bat/bat_hurt0.png" id="8_80v26"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_q60kv"]
+radius = 2.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kprhf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_hjrh2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3rkfj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_t037e")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_x8t1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ouxqu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_6jey4")
+}],
+"loop": false,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_80v26")
+}],
+"loop": true,
+"name": &"hurt",
+"speed": 5.0
+}]
+
+[node name="MobBat" type="CharacterBody3D" groups=["mobs"]]
+script = ExtResource("1_hrlr7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_q60kv")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_kprhf")
+animation = &"hurt"
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[connection signal="input_event" from="." to="." method="_on_Mousover_event"]

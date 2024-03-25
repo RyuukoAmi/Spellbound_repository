@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://caudwptoxmy14"]
+
+[ext_resource type="PackedScene" uid="uid://cixqtqo7jiorh" path="res://Scenes/Objects/Enviornment/Structures/env_ground_square.tscn" id="1_416k3"]
+[ext_resource type="PackedScene" uid="uid://c27ou5w2ch25e" path="res://Scenes/Objects/Enviornment/Dressings/bookbox.tscn" id="2_kuofm"]
+[ext_resource type="PackedScene" uid="uid://rnf3hdkrvcit" path="res://Scenes/Objects/Enviornment/Dressings/borkentable.tscn" id="3_5i6k4"]
+[ext_resource type="PackedScene" uid="uid://w6lfbjeat2va" path="res://Scenes/Objects/Enviornment/Dressings/env_iso_block_3d.tscn" id="4_cddb3"]
+[ext_resource type="PackedScene" uid="uid://itt05tbn5hgr" path="res://Scenes/Objects/Enviornment/Dressings/env_iso_bookshelf.tscn" id="5_h4drw"]
+
+[node name="TestSet" type="Node3D"]
+
+[node name="Ground" parent="." instance=ExtResource("1_416k3")]
+
+[node name="bookbox" parent="." instance=ExtResource("2_kuofm")]
+transform = Transform3D(0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, -18, 3, -11)
+
+[node name="borkentable" parent="." instance=ExtResource("3_5i6k4")]
+transform = Transform3D(0.186678, 0, 0.982421, 0, 1, 0, -0.982421, 0, 0.186678, 8.62752, 0.0724735, 13.1372)
+
+[node name="Env_Iso_Block" parent="." instance=ExtResource("4_cddb3")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 1.212, 1.31021, -20.5929)
+
+[node name="Env_Iso_Block2" parent="." instance=ExtResource("5_h4drw")]
+transform = Transform3D(0.817889, 0, -0.575376, 0, 1, 0, 0.575376, 0, 0.817889, 28.3477, 3.92785, 4.41962)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.809058, 0.513666, 0.285609, 0, -0.485954, 0.873984, 0.587729, -0.707104, -0.393165, 0, 16.6944, 0)
+light_color = Color(0.854549, 0.798386, 0.886976, 1)

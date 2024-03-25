@@ -135,6 +135,8 @@ func load_game():#INFO working as intended
 	playerGlobals.health_level = custom_save_data["health_level"]['VALUE']
 	playerGlobals.mana_level = custom_save_data["mana_level"]['VALUE']
 	playerGlobals.armor_level = custom_save_data["armor_level"]['VALUE']
+	playerGlobals.current_level = custom_save_data["current_level"]['VALUE']
+
 
 func save_game(): #INFO working as intended
 	var saved_game = FileAccess.open("user://save_data.json", FileAccess.WRITE)
