@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711146115
+::res://::1712032123
 export_presets.cfg::TextFile::-1::1710303738::0::1::::<><>::
 icon.svg::CompressedTexture2D::4526488918625910454::1708204296::1708204308::1::::<><>::
 player_defaults.gd::GDScript::-1::1709362840::0::1::::<>Node<>::
@@ -12,7 +12,7 @@ plugin.cfg::TextFile::-1::1710611338::0::1::::<><>::
 THIRDPARTY.md::TextFile::-1::1710611340::0::1::::<><>::
 ::res://addons/godot-git-plugin/linux/::1710615969
 ::res://addons/godot-git-plugin/macos/::1710615969
-::res://addons/godot-git-plugin/win64/::1711141585
+::res://addons/godot-git-plugin/win64/::1712032115
 ::res://Audio files/::1710615967
 audio_stream_player_3d.tscn::PackedScene::943637716832448722::1709663892::0::1::::<><>::uid://c4uhrosjsf03a::::res://Audio files/Spellbound_3.wav
 Spellbound_3.wav::AudioStreamWAV::6850061528982665988::1709623870::1709623872::1::::<><>::
@@ -49,18 +49,18 @@ main.tscn::PackedScene::2840261489821632484::1711145120::0::1::::<><>::uid://14y
 tESTlEVEL.tscn::PackedScene::6691864825655087051::1711145120::0::1::::<><>::uid://b1e5ea4gy04g6::::res://Scenes/Player/player.tscn<>uid://caudwptoxmy14::::res://Scenes/Objects/Enviornment/Sets/test_Set.tscn<>uid://dccy10ddswm32::::res://Scenes/UI/user_interface.tscn
 ::res://Scenes/Objects/::1710615967
 ::res://Scenes/Objects/Entities/::1711146096
-::res://Scenes/Objects/Entities/boss_deurp/::1711146115
-boss_deurp.tscn::PackedScene::696332193977626024::1711146096::0::1::::<><>::res://Scenes/Objects/Entities/mob_bat/mob_bat.gd<>uid://cjyumgr5v2hfs::::res://Sprites/Entities/Enemies/bat/bat3.png<>uid://cn1vqqax0bd64::::res://Sprites/Entities/Enemies/bat/bat0.png<>uid://d3xxd5qekw17a::::res://Sprites/Entities/Enemies/bat/bat1.png<>uid://1rm0nfi4mllm::::res://Sprites/Entities/Enemies/bat/bat_death3.png<>uid://sdqfrhchdcpq::::res://Sprites/Entities/Enemies/bat/bat_death0.png<>uid://dn0ntvwwl1wy0::::res://Sprites/Entities/Enemies/bat/bat_death2.png<>uid://16bm8e5606u5::::res://Sprites/Entities/Enemies/bat/bat_hurt0.png
-mob_bat.gd::GDScript::-1::1711146096::0::1::::<>CharacterBody3D<>::
+::res://Scenes/Objects/Entities/boss_deurp/::1711391144
+boss_deurp.gd::GDScript::-1::1711146096::0::1::::<>CharacterBody3D<>::
+boss_deurp.tscn::PackedScene::696332193977626024::1711391144::0::1::::<><>::res://Scenes/Objects/Entities/mob_bat/mob_bat.gd<>uid://cjyumgr5v2hfs::::res://Sprites/Entities/Enemies/bat/bat3.png<>uid://cn1vqqax0bd64::::res://Sprites/Entities/Enemies/bat/bat0.png<>uid://d3xxd5qekw17a::::res://Sprites/Entities/Enemies/bat/bat1.png<>uid://1rm0nfi4mllm::::res://Sprites/Entities/Enemies/bat/bat_death3.png<>uid://sdqfrhchdcpq::::res://Sprites/Entities/Enemies/bat/bat_death0.png<>uid://dn0ntvwwl1wy0::::res://Sprites/Entities/Enemies/bat/bat_death2.png<>uid://16bm8e5606u5::::res://Sprites/Entities/Enemies/bat/bat_hurt0.png
 ::res://Scenes/Objects/Entities/entityBase/::1710616748
 entity.tscn::PackedScene::2673494342683533449::1709412748::0::1::::<><>::
 entityBase.gd::GDScript::-1::1710616748::0::1::::Entity_Player<>CharacterBody3D<>::
-::res://Scenes/Objects/Entities/mob_bat/::1711145120
+::res://Scenes/Objects/Entities/mob_bat/::1711391143
 mob_bat.gd::GDScript::-1::1710303106::0::1::::<>CharacterBody3D<>::
-mob_bat.tscn::PackedScene::7648580664765561014::1711145120::0::1::::<><>::res://Scenes/Objects/Entities/mob_bat/mob_bat.gd<>uid://cn1vqqax0bd64::::res://Sprites/Entities/Enemies/bat/bat0.png<>uid://d3xxd5qekw17a::::res://Sprites/Entities/Enemies/bat/bat1.png<>uid://1rm0nfi4mllm::::res://Sprites/Entities/Enemies/bat/bat_death3.png<>uid://cjyumgr5v2hfs::::res://Sprites/Entities/Enemies/bat/bat3.png<>uid://sdqfrhchdcpq::::res://Sprites/Entities/Enemies/bat/bat_death0.png<>uid://dn0ntvwwl1wy0::::res://Sprites/Entities/Enemies/bat/bat_death2.png<>uid://16bm8e5606u5::::res://Sprites/Entities/Enemies/bat/bat_hurt0.png
-::res://Scenes/Objects/Entities/Mob_Slime/::1710615967
+mob_bat.tscn::PackedScene::7648580664765561014::1711391143::0::1::::<><>::res://Scenes/Objects/Entities/mob_bat/mob_bat.gd<>uid://cn1vqqax0bd64::::res://Sprites/Entities/Enemies/bat/bat0.png<>uid://d3xxd5qekw17a::::res://Sprites/Entities/Enemies/bat/bat1.png<>uid://1rm0nfi4mllm::::res://Sprites/Entities/Enemies/bat/bat_death3.png<>uid://cjyumgr5v2hfs::::res://Sprites/Entities/Enemies/bat/bat3.png<>uid://sdqfrhchdcpq::::res://Sprites/Entities/Enemies/bat/bat_death0.png<>uid://dn0ntvwwl1wy0::::res://Sprites/Entities/Enemies/bat/bat_death2.png<>uid://16bm8e5606u5::::res://Sprites/Entities/Enemies/bat/bat_hurt0.png
+::res://Scenes/Objects/Entities/Mob_Slime/::1711391143
 mob_slime.gd::GDScript::-1::1710303662::0::1::::<>CharacterBody3D<>::
-mob_slime.tscn::PackedScene::7147924754161834344::1710303664::0::1::::<><>::res://Scenes/Objects/Entities/Mob_Slime/mob_slime.gd<>uid://ccob4pbjc7f73::::res://Sprites/Entities/Enemies/sSlime_strip4.png<>uid://dos00c113qwoi::::res://Sprites/Entities/Enemies/sSlimeAttack_strip6.png<>uid://76waf6rmrvoi::::res://Sprites/Entities/Enemies/sSlimeHurt.png<>uid://dliiwd4jrsx31::::res://Sprites/Entities/Enemies/sSlimeDie_strip6.png
+mob_slime.tscn::PackedScene::7147924754161834344::1711391143::0::1::::<><>::res://Scenes/Objects/Entities/Mob_Slime/mob_slime.gd<>uid://ccob4pbjc7f73::::res://Sprites/Entities/Enemies/sSlime_strip4.png<>uid://dos00c113qwoi::::res://Sprites/Entities/Enemies/sSlimeAttack_strip6.png<>uid://76waf6rmrvoi::::res://Sprites/Entities/Enemies/sSlimeHurt.png<>uid://dliiwd4jrsx31::::res://Sprites/Entities/Enemies/sSlimeDie_strip6.png
 ::res://Scenes/Objects/Entities/pickups/::1710615967
 health_pot.gd::GDScript::-1::1709511164::0::1::::<>Area3D<>::
 health_pot.tscn::PackedScene::833744234163953499::1710110706::0::1::::<><>::res://Scenes/Objects/Entities/pickups/health_pot.gd<>uid://epp5jlw3ryer::::res://Sprites/Enviornment/Items/Pot/sFrag_pot_strip4.png<>uid://dw5vpn3m2y875::::res://Sprites/Enviornment/Items/Pot/sPot.png
